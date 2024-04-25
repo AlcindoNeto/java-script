@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro Exercício JS</title>
+    <style>
+        body{
+            background-color: rgb(80, 108, 185);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+        }
+        h1{
+            color: rgb(199, 199, 45);
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>Já me livrei da maldição, agora só faltam 9!</p>
+    <script>
+        //window.alert('Uma mensagem em JS!')
+        //window.confirm('Está gostando de JS?')
+        //var nome = window.prompt('Qual o seu nome?')
+        //window.alert('Olá, ' + nome + ' !')
+        var n1 = Number(window.prompt('Digite um número:'))
+        var n2 = Number(window.prompt('Digite outro número:'))
+        var soma = n1 + n2;
+        //window.alert('A soma dos valores é ' + String(soma))
+        alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+        document.write(`Salário é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} </br>`)
+        document.write(`Salário é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})} </br>`)
+        document.write(`Salário é ${soma.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})} </br>`)
+    </script>
+</body>
+</html>
