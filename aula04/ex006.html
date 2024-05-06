@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Estrangeiros</title>
+</head>
+<body>
+    <h1>Programa de Estrangeiros</h1>
+    <p>Você vive em que país?</p>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" onclick="verificarPais()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificarPais(){
+            var txtp = window.document.getElementById('txtpais')
+            var res = window.document.getElementById('res')
+            var pais = txtp.value
+            res.innerHTML = `Vivendo no país ${pais}`
+            if(pais == 'Brasil'){
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong>!</p>`
+            }
+            else{
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong>!</p>`
+            }
+        }
+
+    </script>
+</body>
+</html>
